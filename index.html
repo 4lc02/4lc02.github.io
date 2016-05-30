@@ -2,83 +2,82 @@
 <html>
 <head>
  <link href="css/bootstrap.min.css" rel="stylesheet">	
-<meta charset=UTF-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Luca Borra">
+<meta name="description" content="Slide In/Out Navigation with Pushed Content">
+<meta name="keywords" content="Slide In/Out Navigation with Pushed Content">
 <title>TAKE THE QUOTE</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <style type="text/css">
 
-* {padding: 0; margin: 0}
-body{ font-family: sans-serif;}
-a{ text-decoration:none; color: #00A5CC;}
-li{ list-style-type: none;}
+* { padding: 0; margin: 0; }
+body { font-family: sans-serif; overflow: hidden; }
+a { text-decoration: none; color: #00A5CC; }
+li { list-style-type: none; }
 
-header{
-width: 100%;
-height: 50px;
-margin: auto;
-border-bottom: 1px solid #EEE;
+header { 
+	width: 100%; 
+	height: 50px; 
+	margin: auto;
+	border-bottom: 1px solid #EEE;
 }
-
-#brand{
-float:left;
-left: 80px;
-position:fixed;
-line-height:50px;
-color: #E5DAC0;
-font-size: 25px;
-font-weight: bolder;
-z-index:1;
+#brand {
+	float: left;
+	line-height: 50px;
+	color: #E5DAC0;
+	font-size: 25px;
+	font-weight: bolder;
 }
-
-
-nav { width: 100%; text-align: center;}
-nav a{
-display: block;
-padding: 15px 0;
-border-bottom: 1px solid #C3AA6E;
-color: #F0EADC;
+nav { width: 100%; text-align: center; }
+nav a { 
+	display: block; 
+	padding: 15px 0;
+	border-bottom: 1px solid #C3AA6E;
+	color: #F0EADC;
 }
-nav a:hover { background: #E5DAC0; color: #FFF;}
-nav li: last-child a {border-bottom: none;}
+nav a:hover { background: #E5DAC0; color: #FFF; }
+nav li:last-child a { border-bottom: none; }
 
-/*---------------------------*/
+/*-----------------------------------------*/
 
 .menu {
- width: 240px;
- height:100%;
- position:fixed;
- background:#D9C9A3;
- left:-240px;
- transition: all .3s ease-in-out;
- -webkit-transition: all .3s ease-in-out;
- -moz-transition: all .3s ease-in-out;
- -ms-transition: all .3s ease-in-out;
- -o-transition: all .3s ease-in-out;
- z-index:1;
+	width: 240px;
+	height: 100%;
+	position: absolute;
+	background: #D9C9A3;
+	left: -240px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	
 }
-
-
 .menu-icon {
- padding:10px 20px;
- background:#E5DAC0;
- color:#987D3E;
- cursor:pointer;
- float:right;
- margin-top:4px;
- border-radius:5px;
- z-index:1;
- position:fixed;
+	padding: 10px 20px;
+	background: #E5DAC0;
+	color: #987D3E;
+	cursor: pointer;
+	float: right;
+	margin-top: 4px;
+	border-radius: 5px;
 }
+#menuToggle { display: none; }
 
-.test{position: absolute; top: 80px; left: 250px; color: black; font-size: 40px}
+#menuToggle:checked ~ .menu { position: absolute; left: 0; }
 
-#menuToggle {display:none;}
-#menuToggle:checked ~ .menu {position: fixed; left: 0;}
+#menuToggle:checked ~ .content { position: absolute; left: 260px; }
 
+.content {
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
 </style>
 </head>
 
@@ -87,42 +86,29 @@ nav li: last-child a {border-bottom: none;}
 <input type="checkbox" id="menuToggle">
 <label for="menuToggle" class="menu-icon">&#9776;</label>
 
-
 <header>
 <div id="brand">TAKE THE QUOTE</div>
 </header>
 
 <nav class="menu">
-<ul>
-	<li><a href="#">HOME</a></li>
-	<li><a href="#">WHY?</a></li>
-	<li><a href="#">VIDEOGAME</a></li>
-	<li><a href="#">CINEMA</a></li>
-	<li><a href="#">BOOK</a></li>
-	<li><a href="#">MUSIC</a></li>
-</ul>
+	<ul>
+    	<li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">WORK</a></li>
+        <li><a href="#">INSPIRATION</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
 </nav>
 
+<div class="content">
+<h2>Slide In/Out Content</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. </p>
 
-
-<p class="test">Il Progetto</p>
-<font face=”sans-serif”><div style="position:absolute; top:140px; left: 250px; font-size: 30px;" >delete!</div></font><br><br><br>
-<div class="col-md-2"></div>
-  <div class="col-md-5"><br><br><br><font face=”sans-serif”><h1>Il Progetto</h1>lo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sì
-  <br><br><br>
-  lo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sì
-  <br><br><br>
-  lo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sìlo abbiamo fatto perchè sì
-  <br><br><br>
-  </font></div>
-   <div class="col-md-5">
 </div>
-
-
 
 </body>
 </html>
-
 
 
 
