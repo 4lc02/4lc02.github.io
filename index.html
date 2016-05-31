@@ -1,73 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link href="css/bootstrap.min.css" rel="stylesheet">	
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="Luca Borra">
-<meta name="description" content="Slide In/Out Navigation with Pushed Content">
-<meta name="keywords" content="Slide In/Out Navigation with Pushed Content">
+<meta charset=UTF-8" />
 <title>TAKE THE QUOTE</title>
 <style type="text/css">
 
-* { padding: 0; margin: 0; }
-body { font-family: sans-serif; overflow: hidden; }
-a { text-decoration: none; color: #00A5CC; }
-li { list-style-type: none; }
+* {padding: 0; margin: 0}
+body{ font-family: sans-serif;}
+a{ text-decoration:none; color: #00A5CC;}
+li{ list-style-type: none;}
 
-header { 
-	width: 100%; 
-	height: 50px; 
-	margin: auto;
-	border-bottom: 1px solid #EEE;
+header{
+width: 100%;
+height: 50px;
+margin: auto;
+border-bottom: 1px solid #EEE;
 }
-#brand {
-	float: left;
-	line-height: 50px;
-	color: #E5DAC0;
-	font-size: 35px;
-	font-weight: bolder;
-}
-nav { width: 100%; text-align: center; }
-nav a { 
-	display: block; 
-	padding: 15px 0;
-	border-bottom: 1px solid #C3AA6E;
-	color: #F0EADC;
-}
-nav a:hover { background: #E5DAC0; color: #FFF; }
-nav li:last-child a { border-bottom: none; }
 
-/*-----------------------------------------*/
+#brand{
+float:left;
+line-height:50px;
+color: #E5DAC0;
+font-size: 35px;
+font-weight: bolder;
+}
+
+
+nav { width: 100%; text-align: center;}
+nav a{
+display: block;
+padding: 15px 0;
+border-bottom: 1px solid #C3AA6E;
+color: #F0EADC;
+}
+nav a:hover { background: #E5DAC0; color: #FFF;}
+nav li: last-child a {border-bottom: none;}
+
+/*---------------------------*/
 
 .menu {
-	width: 240px;
-	height: 100%;
-	position: absolute;
-	background: #D9C9A3;
-	left: -240px;
-	transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	
+ width: 240px;
+ height:100%;
+ position:absolute;
+ background:#D9C9A3;
+ left:-240px;
+ transition: all .3s ease-in-out;
+ -webkit-transition: all .3s ease-in-out;
+ -moz-transition: all .3s ease-in-out;
+ -ms-transition: all .3s ease-in-out;
+ -o-transition: all .3s ease-in-out;
 }
+
+
 .menu-icon {
-	padding: 10px 20px;
-	background: #E5DAC0;
-	color: #987D3E;
-	cursor: pointer;
-	float: right;
-	margin-top: 4px;
-	border-radius: 5px;
+ padding:10px 20px;
+ background:#E5DAC0;
+ color:#987D3E;
+ cursor:pointer;
+ float:right;
+ margin-top:4px;
+ border-radius:5px;
 }
-#menuToggle { display: none; }
 
-#menuToggle:checked ~ .menu { position: absolute; left: 0; }
-
+#menuToggle {display:none;}
+#menuToggle:checked ~ .menu {position: absolute; left: 0;}
 #menuToggle:checked ~ .content { position: absolute; left: 260px; }
-
 .content {
 	width: 90%;
 	margin: auto;
@@ -78,6 +75,7 @@ nav li:last-child a { border-bottom: none; }
 	-ms-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
 }
+
 </style>
 </head>
 
@@ -86,24 +84,24 @@ nav li:last-child a { border-bottom: none; }
 <input type="checkbox" id="menuToggle">
 <label for="menuToggle" class="menu-icon">&#9776;</label>
 
+
 <header>
 <div id="brand">TAKE THE QUOTE</div>
 </header>
 
 <nav class="menu">
-	<ul>
-    	<li><a href="#">HOME</a></li>
-        <li><a href="#">PERCHÈ?</a></li>
-        <li><a href="#">VIDEOGIOCHI</a></li>
-        <li><a href="#">FILM</a></li>
-        <li><a href="#">MUSICA</a></li>
-        <li><a href="#">LIBRI</a></li>
-    </ul>
+<ul>
+	<li><a href="#">HOME</a></li>
+	<li><a href="#">WHY?</a></li>
+	<li><a href="#">VIDEOGAME</a></li>
+	<li><a href="#">CINEMA</a></li>
+	<li><a href="#">BOOK</a></li>
+	<li><a href="#">MUSIC</a></li>
+</ul>
 </nav>
 
 <div class="content">
-	<br>
-<h2> <FONT FACE="Comic Sans MS">PERCHÈ QUESTO SITO?</h2> <br><hr><br>
+<br><h2> <FONT FACE="Comic Sans MS">PERCHÈ QUESTO SITO?</h2> <br><hr><br>
 <p>Al giorno d'oggi, tra frasi ad effetto da scrivere nei post su Facebook, continui cambiamenti di stato su WhatsApp, vignette divertenti, dialoghi fra amici e (ahinoi) temi scolastici, si ha sempre più spesso a che fare con citazioni e frasi “prese in prestito” dall’operato di altri scrittori o autori. 
 Ma qual è il vero punto di forza di queste citazioni? Cos’è che ci porta tanto spesso a copiarle e in un certo senso a farle nostre? La risposta a questi banali quesiti è la seguente: l’accostamento di parole, il susseguirsi di suoni e di periodi suscita in noi sentimenti o ricordi del passato o del presente e questo porta con sé lacrime, sorrisi e risate (ma anche la depressione, perché la depressione ci deve sempre essere a dire di alcuni/e…).
 Il nostro intento era quindi quello di catalogare le citazioni più importanti, dividendole per il tipo di sorgente e sperando che ognuno possa trovare ciò che sta cercando. Cominciamo quindi con questa lunga, ma si spera interessante, avventura!</p>
@@ -155,7 +153,6 @@ Il nostro intento era quindi quello di catalogare le citazioni più importanti, 
 <br>
 <p>“Quando ero giovane avevo la libertà, ma non la vedevo. Avevo il tempo, ma non lo sapevo. E avevo l'amore, ma non lo provavo. Ci sono voluti molti anni per capire il significato di tutti e tre. E ora, al tramonto della mia vita, questa comprensione si è mutata in appagamento. Amore, libertà e tempo, allora così disponibili, sono il nutrimento che mi permette di andare avanti.”<i>– Ezio Auditore, Assassin’s Creed Embers.</i></p>
 </div>
-
 </body>
 </html>
 
