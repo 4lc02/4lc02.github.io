@@ -6,20 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TAKE THE QUOTE</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<style type="text/css">
 
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+<style type="text/css">
 * {padding: 0; margin: 0}
 body{ font-family: sans-serif;}
 a{ text-decoration:none; color: #00A5CC;}
 li{ list-style-type: none;}
-
 header{
 width: 100%;
 height: 50px;
 margin: auto;
 border-bottom: 1px solid #EEE;
 }
-
 #brand{
 float:left;
 line-height:50px;
@@ -27,8 +28,6 @@ color: #E5DAC0;
 font-size: 35px;
 font-weight: bolder;
 }
-
-
 nav { width: 100%; text-align: center;}
 nav a{
 display: block;
@@ -38,9 +37,7 @@ color: #F0EADC;
 }
 nav a:hover { background: #E5DAC0; color: #FFF;}
 nav li: last-child a {border-bottom: none;}
-
 /*---------------------------*/
-
 .menu {
  width: 240px;
  height:100%;
@@ -53,8 +50,6 @@ nav li: last-child a {border-bottom: none;}
  -ms-transition: all .3s ease-in-out;
  -o-transition: all .3s ease-in-out;
 }
-
-
 .menu-icon {
  padding:10px 20px;
  background:#E5DAC0;
@@ -64,7 +59,6 @@ nav li: last-child a {border-bottom: none;}
  margin-top:4px;
  border-radius:5px;
 }
-
 #menuToggle {display:none;}
 #menuToggle:checked ~ .menu {position: absolute; left: 0;}
 #menuToggle:checked ~ .content { position: absolute; left: 260px; }
@@ -78,21 +72,16 @@ nav li: last-child a {border-bottom: none;}
 	-ms-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
 }
-
 </style>
 </head>
-
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
 <input type="checkbox" id="menuToggle">
 <label for="menuToggle" class="menu-icon">&#9776;</label>
-
-
 <header>
 <div id="brand">TAKE THE QUOTE</div>
 </header>
-
 <nav class="menu">
 <ul>
 	<li><a href="#home">HOME</a></li>
@@ -100,12 +89,11 @@ nav li: last-child a {border-bottom: none;}
 	<li><a href="#videogiochi">VIDEOGIOCHI</a></li>
 	<li><a href="#cinema">CINEMA e SERIE TV</a></li>
 	<li><a href="#musica">MUSICA</a></li>
-	<li><a href="#libri">LIBRI</a></li>
+
 </ul>
 </nav>
-
 <div class="content">
-<br><h2 id="perchè"> <FONT FACE="Comic Sans MS">PERCHÈ QUESTO SITO?</h2> <br><hr><br>
+<br><h2 id="perchè"> <FONT FACE="Comic Sans MS">PERCHÈ QUESTO SITO?</h2>  <br><hr><br>
 <p>Al giorno d'oggi, tra frasi ad effetto da scrivere nei post su Facebook, continui cambiamenti di stato su WhatsApp, vignette divertenti, dialoghi fra amici e (ahinoi) temi scolastici, si ha sempre più spesso a che fare con citazioni e frasi “prese in prestito” dall’operato di altri scrittori o autori. 
 Ma qual è il vero punto di forza di queste citazioni? Cos’è che ci porta tanto spesso a copiarle e in un certo senso a farle nostre? La risposta a questi banali quesiti è la seguente: l’accostamento di parole, il susseguirsi di suoni e di periodi suscita in noi sentimenti o ricordi del passato o del presente e questo porta con sé lacrime, sorrisi e risate (ma anche la depressione, perché la depressione ci deve sempre essere a dire di alcuni/e…).
 Il nostro intento era quindi quello di catalogare le citazioni più importanti, dividendole per il tipo di sorgente e sperando che ognuno possa trovare ciò che sta cercando. Cominciamo quindi con questa lunga, ma si spera interessante, avventura!</p>
@@ -117,15 +105,20 @@ Il nostro intento era quindi quello di catalogare le citazioni più importanti, 
 <li><a data-toggle="modal" data-target="#myModal1">- Orvus</a>, R&C: A spasso nel tempo. </li></i></p>
 </ul>
 <br>
-<p>“Sir Daniel Fortesque! di ritorno dalla terra dei morti!? Il valoroso eroe di Gallomere ridotto a reliquia polverosa nel retro del vecchio museo. Le cose sono cambiate da quando sei partito! Il mondo è cambiato, ma i problemi sono sempre i soliti, QUINDI trovati un'arma e tieniti pronto a combattere! Ah! E se vedi il mio alone spettrale mettiti sotto la luce e premi il tasto "azione" per chiamarmi!”<i>– Medievil.</i></p>
+<p>“Sir Daniel Fortesque! di ritorno dalla terra dei morti!? Il valoroso eroe di Gallomere ridotto a reliquia polverosa nel retro del vecchio museo. Le cose sono cambiate da quando sei partito! Il mondo è cambiato, ma i problemi sono sempre i soliti, QUINDI trovati un'arma e tieniti pronto a combattere! Ah! E se vedi il mio alone spettrale mettiti sotto la luce e premi il tasto "azione" per chiamarmi!”<i><ul type="circle">
+<li><a data-toggle="modal" data-target="#myModal2">- Ghost</a>, Medievil. </li></i></p>
+</ul>
 <br>
 <p>"Il passato è come un buco nero. Puoi provare a scappare, ma più corri, più questo cresce terribilmente alle tue spalle, e lo senti sfiorarti i talloni. L'unica via di uscita è quella di voltarsi e affrontarlo. [...] Ma è come guardare dentro la tomba della donna che ami. [...] O ficcarti in bocca la canna di una pistola, sentire il proiettile che freme dentro il tamburo, pronto a farti schizzare via il cervello."<i>– Max Payne 2.</i></p>
 <br>
 <p>“The war never changes” <i>– Intro, Fallout.</i></p>
 <br>
-<p>“Tutto questo... Lo sto facendo per amore.”<i>–Ethan Mars, Heavy rain.</i></p>
+<p>“Tutto questo... Lo sto facendo per amore.”<i><ul type="circle">
+<li><a data-toggle="modal" data-target="#myModal3">- Ethan Mars</a>, Heavy Rain. </li></i></p>
+</ul>
 <br>
-<p>"Beh, pensavo di aprirmi la strada sparando, tanto per cambiare" <i>– Master Chief, Halo.</i></p>
+<p>"Beh, pensavo di aprirmi la strada sparando, tanto per cambiare"<i><ul type="circle">
+<li><a data-toggle="modal" data-target="#myModal4">- Master Chief e Cortana</a>, Halo. </li></i></p>
 <br>
 <p>"è finita"; "No, io credo sia solo l'inizio..."<i>- Cortana e Master Chief, Halo.</i></p>
 <br>
@@ -133,29 +126,34 @@ Il nostro intento era quindi quello di catalogare le citazioni più importanti, 
 <br>
 <p>"Qual è la differenza tra un uomo e uno schiavo? Ricchezza? Potere? No... Un uomo sceglie, uno schiavo ubbidisce" <i>– Andrew Ryan, Bioshock 1.</i></p>
 <br>
-<p>“Dear, oh dear. What was it? The Hunt? The Blood? Or the horrible dream? It always comes down to the Hunters' helper after all these sort of messes. Tonight, Gehrman joins the hunt.”<i>– Gherman, Bloodborne.</i></p>
+<p>“Dear, oh dear. What was it? The Hunt? The Blood? Or the horrible dream? It always comes down to the Hunters' helper after all these sort of messes. Tonight, Gehrman joins the hunt.”<i><ul type="circle">
+<li><a data-toggle="modal" data-target="#myModal5">- Gehrman</a>, Bloodborne. </li></i></p>
+</ul>
 <br>
 <p>"You must accept your death, be freed from the night."<i>– Gherman, Bloodborne.</i></p>
 <br>
 <p>"Più ti avvicini alla luce, e più grande sarà la tua ombra" <i>- Kingdom Hearts.</i></p>
 <br>
-<p>“Ho qualcosa per te! Ecco prendi questo comunicatore ECHO che non ho certo preso da uno dei cadaveri.” <i>– Claptrap, Borderlands 2.</i></p>
+<p>“Ho qualcosa per te! Ecco prendi questo comunicatore ECHO che non ho certo preso da uno dei cadaveri.” <i><ul type="circle">
+<li><a data-toggle="modal" data-target="#myModal6">- Claptrap</a>, Borderlands. </li></i></p>
 <br>
 <p> “Non piangere perché non c’è più ma gioisci perché c’è stato”<i>– Frase incisa sull’arma del defunto Roland, Borderlands 2.</i></p>
 <br>
 <p>“Mordecai told me what happened to Roland. So here's what we do. We bury Roland. We save this planet. And we kill Jack, his associates, his friends, his FAMILY -- everyone's he's EVER MET! WE SKIN 'EM WITH THEIR OWN GODDAMN TEETH!”<i>- Brick, Borderlands 2.</i></p>
 <br>
-<p>"When I gave you that flame, I gave you a part of myself... Please take good care of it."<i>– Laurentius, Dark Souls.</i></p>
+<p>"When I gave you that flame, I gave you a part of myself... Please take good care of it."<i><ul type="circle">
+<li><a data-toggle="modal" data-target="#myModal7">- Laurentius</a>, Dark Souls. </li></i></p>
 <br>
-<p>“Oh… possiamo darvi un po' di Bacon in cambio di quella ragazza” “COLE! Avanti! Sono 6 mesi che non mangio Bacon!” <i>– Baird, Gears of War 3. </i></p>
+<p>“Oh… possiamo darvi un po' di Bacon in cambio di quella ragazza” “COLE! Avanti! Sono 6 mesi che non mangio Bacon!”<i> <li><a data-toggle="modal" data-target="#myModal8">- Baird</a>, Gears of War. </li></i></p>
 <br>
-<p> “Non pensavi sarebbe finita così, vero Maria?”<i>– Dom, Gears of War 3.</i></p>
 <br>
-<p>“Dopo quello che abbiamo passato, dopo tutto quello che ho fatto, non può essere tutto inutile"<i>– Ellie, The Last of Us.</i></p>
+<p> “Non pensavi sarebbe finita così, vero Maria?”<i><li><a data-toggle="modal" data-target="#myModal9">- Dom</a>, Gears of War. </li></i></p>
 <br>
-<p>“Là a Boston, quando mi hanno morsa, non ero sola. C'era anche la mia migliore amica ed è stata morsa anche lei. Non sapevamo cosa fare, e allora... lei ha detto: ‘Aspettiamo e basta. Possiamo rendere tutto poetico e perdere la testa insieme.’ Sto ancora aspettando il mio turno.”<i>– Ellie, The Last of Us.</i></p>
+<p>“Dopo quello che abbiamo passato, dopo tutto quello che ho fatto, non può essere tutto inutile"<i><li><a data-toggle="modal" data-target="#myModal10">- Ellie</a>, The Last of Us. </li></i></p>
 <br>
-<p>“Nulla è reale, tutto è lecito.” <i>– Ezio Auditore, Assassin’s Creed.</i></p>
+<p>“Là a Boston, quando mi hanno morsa, non ero sola. C'era anche la mia migliore amica ed è stata morsa anche lei. Non sapevamo cosa fare, e allora... lei ha detto: ‘Aspettiamo e basta. Possiamo rendere tutto poetico e perdere la testa insieme.’ Sto ancora aspettando il mio turno.”<i><li><a data-toggle="modal" data-target="#myModal10">- Ellie</a>, The Last of Us. </li></i></p>
+<br>
+<p>“Nulla è reale, tutto è lecito.” <i><li><a data-toggle="modal" data-target="#myModal11">- Ezio Auditore</a>, Assassin's Creed. </li></i></p>
 <br>
 <p>“Quando ero giovane avevo la libertà, ma non la vedevo. Avevo il tempo, ma non lo sapevo. E avevo l'amore, ma non lo provavo. Ci sono voluti molti anni per capire il significato di tutti e tre. E ora, al tramonto della mia vita, questa comprensione si è mutata in appagamento. Amore, libertà e tempo, allora così disponibili, sono il nutrimento che mi permette di andare avanti.”<i>– Ezio Auditore, Assassin’s Creed Embers.</i></p>
 
@@ -170,9 +168,10 @@ Il nostro intento era quindi quello di catalogare le citazioni più importanti, 
 <p>"Drugo voleva solo il suo tappeto. Nessuna avidità. È che dava... un tono all'ambiente"<i> - Jeff 'Drugo' Lebowski, Il Grande Lebowski</i></p> 
 <br>
 <p>"Siamo in missione per conto di Dio"<i>- TheBlues Brothers </i> </p>
+<br>
 <p>“Ehi, tu porco, levale le mani di dosso!”<i>– George McFly, Ritorno al Futuro.</i></p>
 <br>
-<p>“Say my name”<i>– Walter White, Breaking Bad.</i></p>
+<p>“Say my name”<i><li><a data-toggle="modal" data-target="#myModal12">- Walter White</a>, Breaking Bad. </li></i></p>
 <br>
 <p>“Non sono in pericolo, Skyler: io sono il pericolo. Apro la porta e mi becco un proiettile, è così che mi vedi? No. I am the one who knocks” <i>– Walter White, Breaking Bad.</i></p>
 <br>
@@ -184,21 +183,21 @@ Il nostro intento era quindi quello di catalogare le citazioni più importanti, 
 <br>
 <p>“Al gioco del trono o si vince o si muore.”<i>– Cersei Lannister, Game of Thrones. </i></p>
 <br>
-<p>“Mai dimenticare chi sei, perché di certo il mondo non lo dimenticherà. Trasforma chi sei nella tua forza, così non potrà mai essere la tua debolezza. Fanne un'armatura, e non potrà mai essere usata contro di te.” <i>– Tyrion Lannister, Game of Thrones.</i></p>
+<p>“Mai dimenticare chi sei, perché di certo il mondo non lo dimenticherà. Trasforma chi sei nella tua forza, così non potrà mai essere la tua debolezza. Fanne un'armatura, e non potrà mai essere usata contro di te.” <i><li><a data-toggle="modal" data-target="#myModal13">- Tyrion Lannister</a>, Game of Thrones. </li></i></p>
 <br>
-<p>“I drink and I know things” <i>– Tyrion Lannister, Game of Thrones.</i></p>
+<p>“I drink and I know things” <i><li><a data-toggle="modal" data-target="#myModal13">- Tyrion Lannister</a>, Game of Thrones. </li></i></p>
 <br>
-<p>“Una volta un saggio mi ha detto: "si fa la pace con i nemici, non con gli amici" <i>– Tyrion Lannister, Game of Thrones.</i></p>
+<p>“Una volta un saggio mi ha detto: "si fa la pace con i nemici, non con gli amici"<i><li><a data-toggle="modal" data-target="#myModal13">- Tyrion Lannister</a>, Game of Thrones. </li></i></p>
 <br>
-<p>“You know nothing Jon Snow”<i>– Ygritte, Game of Thrones. </i></p>
+<p>“You know nothing Jon Snow”<i><li><a data-toggle="modal" data-target="#myModal14">- Ygritte</a>, Game of Thrones. </li></i></p>
 <br>
 <p>“È meraviglioso stare sotto al mare, ma se ci rimani troppo affoghi.”<i>- Brynden Rivers, Game of Thrones. </i></p>
 <br>
-<p>"My watch has ended"<i>- Jon Snow, Game of Thrones.</i></p>
+<p>"My watch has ended"<i><li><a data-toggle="modal" data-target="#myModal15">- Jon Snow</a>, Game of Thrones. </li></i></p>
 <br>
 <p>“Hold the door”<i>– Meera, Game of Thrones.</i></p>
 <br>
-<p>“Hodor”<i>–Hodor, Game of Thrones.</i></p>
+<p>“Hodor”<i><li><a data-toggle="modal" data-target="#myModal16">- Hodor</a>, Game of Thrones. </li></i></p>
 
 <br><br>
 <br><h2 id="musica"> <FONT FACE="Comic Sans MS">MUSICA</h2> <br><hr><br>
@@ -229,7 +228,7 @@ Il nostro intento era quindi quello di catalogare le citazioni più importanti, 
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Galleria immagini Uncharted 4️</h4>
+        <h4 class="modal-title" id="myModalLabel">Il piccolo Orvus</h4>
       </div>
       <div class="modal-body">
         <img src="http://static.giantbomb.com/uploads/original/0/1717/1101764-orvus.jpg"  class="img-responsive img-rounded" /><br>
@@ -237,6 +236,247 @@ Il nostro intento era quindi quello di catalogare le citazioni più importanti, 
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sir Daniel</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://vignette3.wikia.nocookie.net/playstationallstarsbattleroyale/images/4/44/Avatar_sir_daniel_1.png/revision/latest?cb=20120831224338" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Logo di Heavy Rain</h4>
+      </div>
+      <div class="modal-body">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/Heavy_Rain_Cover_Art.jpg" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Master Chief e Cortana</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://24.media.tumblr.com/tumblr_mdb05dpoY01rfgtgpo1_500.jpg" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Il primo cacciatore</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://static.giantbomb.com/uploads/scale_small/1/10354/2747860-gehrman_concept_art_1427135260.jpg" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Cl4p-tp</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://vignette1.wikia.nocookie.net/universe-of-smash-bros-lawl/images/9/9f/Claptrap.png/revision/latest?cb=20151014010940" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Laurentius</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://darksouls-italia.wiki.fextralife.com/file/view/Laurentius.jpg/477320016/265x387/Laurentius.jpg" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">L'ingegnere Baird</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://img1.gamersky.com/image2012/07/20120717u_1/gamersky_01small_02.jpg" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dom, R.I.P. </h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://www.officialpsds.com/images/thumbs/Dom---Gears-Of-War-3-psd70037.png" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Ellie</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://vignette4.wikia.nocookie.net/thelastofus/images/8/80/Ellie_in_the_winter.jpg/revision/latest?cb=20140615212358" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Ezio</h4>
+      </div>
+      <div class="modal-body">
+        <img src="https://pp.vk.me/c628529/v628529644/3a14c/uOkWiimrSUQ.jpg" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">W.W.</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://cdn.pu.nl/article/Breaking_Bad_front.png" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Tyrion Lannister</h4>
+      </div>
+      <div class="modal-body">
+        <img src="https://pbs.twimg.com/profile_images/668279339838935040/8sUE9d4C.jpg" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Ygritte <3 </h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://66.media.tumblr.com/86d229be403422f5f9d7062804193556/tumblr_nxez54iv6p1sypb7po1_500.jpg" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Lord Comandante </h4>
+      </div>
+      <div class="modal-body">
+        <img src="https://survivednarc.files.wordpress.com/2016/04/b9f5c9e818fcfc6b441d70f9482df133.jpg" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Wylis :'( </h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://cdn2.connery.dk/image/crop/2732491/484/320.jpg" /><br>
+             </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
