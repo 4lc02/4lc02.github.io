@@ -24,7 +24,7 @@ border-bottom: 1px solid #EEE;
 #brand{
 float:left;
 line-height:50px;
-position:fixed,
+
 color: #E5DAC0;
 font-size: 35px;
 font-weight: bolder;
@@ -42,7 +42,7 @@ nav li: last-child a {border-bottom: none;}
 .menu {
  width: 240px;
  height:100%;
- position:fixed;
+ position:absolute;
  background:#D9C9A3;
  left:-240px;
  transition: all .3s ease-in-out;
@@ -61,7 +61,7 @@ nav li: last-child a {border-bottom: none;}
  border-radius:5px;
 }
 #menuToggle {display:none;}
-#menuToggle:checked ~ .menu {position: fixed; left: 0;}
+#menuToggle:checked ~ .menu {position: absolute; left: 0;}
 #menuToggle:checked ~ .content { position: absolute; left: 260px; }
 .content {
 	width: 80%;
